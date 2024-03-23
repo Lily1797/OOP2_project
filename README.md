@@ -1,7 +1,7 @@
 # OOP2_project
 A custom function to create an interactive UMAP plot
 
-## Instalation
+## Installation
 Clone the repository:
 ```
 git clone https://github.com/Lily1797/OOP2_project/
@@ -17,7 +17,7 @@ Import the new function in the scanpy/plotting/__)init__.py file by adding the f
 from .umap_interactive import interactive_umap
 ```
 
-## Usage:
+## Usage
 Within your main Python script or Jupyter notebook, you can import the function from umap_interactive.py and use it like this:
 ```
 from scanpy.plotting import interactive_umap  # Assuming interactive_umap.py is in your path
