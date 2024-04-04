@@ -35,7 +35,11 @@ def plot_interactive_umap(adata, color_by="louvain", size=5, title="Interactive 
   if color_by == "louvain":
       labels = adata.obs["louvain"].tolist()
   elif color_by == "bulk_labels":
-      labels = adata.obs["bulk_labels"].cat.categories.tolist()
+      bulk_labels = adata.obs["bulk_labels"].cat.categories.tolist()
+      labels = adata.obs['bulk_labels'].cat.codes.tolist()
+      label_names = [None]*len(labels)
+      for i, code in enumerate(labels):
+          label_names[i] = bulk_labels[code]
   else:
       labels = None  # No labels for hover tool if color_by is invalid
 
