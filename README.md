@@ -18,6 +18,11 @@ adata = sc.datasets.pbmc68k_reduced()
 # Call the function
 plot_interactive_umap(adata, color_by="bulk_labels")  # Or color_by="louvain"
 ```
+color_by="bulk_labels"
+![color_by="bulk_labels"](https://github.com/Lily1797/OOP2_project/blob/main/bulk_labels.png)
+color_by="louvain"
+![color_by="louvain"](https://github.com/Lily1797/OOP2_project/blob/main/louvain.png)
+
 This custom function provides flexibility by allowing users to choose the coloring scheme (louvain or bulk_labels) through the color_by argument. It keeps your custom functionality separate from the core plotting scanpy codebase, promoting modularity and easier maintenance. You can extend this further by adding more functionalities to interactive_umap.py without affecting existing scanpy plotting logic.
 
 ### Additional styling options
