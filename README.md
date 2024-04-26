@@ -2,11 +2,6 @@
 A custom function to create an interactive UMAP plot
 
 ## Installation
-Before using the function, make sure that you have already installed scanpy and bokeh packages
-```
-pip install scanpy
-pip install bokeh
-```
 Clone the repository:
 ```
 git clone https://github.com/Lily1797/OOP2_project/
@@ -19,6 +14,11 @@ cp interactive_umap.py Path_to_your_project_directory
 The code in the interactive_umap.py file defines a new plotting function called plot_interactive_umap. The function takes an AnnData object as input and returns a Bokeh plot with an interactive UMAP plot.
 
 ## Usage
+Before using the function, make sure that you have already installed scanpy and bokeh packages
+```
+pip install scanpy
+pip install bokeh
+```
 Within your main Python script or Jupyter notebook, you can import the function from interactive_umap.py and use it like this:
 ```
 import scanpy as sc
