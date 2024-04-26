@@ -50,7 +50,7 @@ def plot_interactive_umap(adata, color_by="louvain", size=5, title="Interactive 
 
   # Create Bokeh figure and customize it
   fig = figure(title=title, x_axis_label="UMAP 1", y_axis_label="UMAP 2")
-  fig.circle(
+  fig.scatter(
       x="x",
       y="y",
       source=source,
